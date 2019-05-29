@@ -68,7 +68,9 @@ img {
     font-size: 12px;
     padding: 15px 26px; } }
 .hero {
-  padding: 50px 0; }
+  background-color: #f3f3f3;
+  padding: 50px 0;
+  color: #333333; }
   .hero-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -142,9 +144,7 @@ img {
   .hero-list__image {
     margin-right: 15px; } }
 @media (max-width: 330px) {
-  .hero {
-    background-color: #f3f3f3; }
-    .hero-text__title {
-      font-size: 23px; } }
+  .hero-text__title {
+    font-size: 23px; } }
 
 /*# sourceMappingURL=style.css.map */
