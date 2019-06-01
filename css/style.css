@@ -212,6 +212,7 @@ img {
   font-weight: normal;
   font-style: normal; }
 .offer {
+  color: #333333;
   background: url("../image/offer-bg.png") no-repeat;
   background-position: center right;
   background-size: contain;
