@@ -25,6 +25,10 @@ img {
   width: 1170px;
   margin: 0 auto; }
 
+.container-portfolio {
+  width: 1200px;
+  margin: 0 auto; }
+
 @media (max-width: 1200px) {
   .container {
     width: 760px; } }
@@ -46,7 +50,8 @@ img {
   .section-title {
     font-size: 24px;
     font-family: 'Museo Sans Bold', sans-serif;
-    font-weight: 700; }
+    font-weight: 700;
+    text-align: center; }
   .section-subtitle {
     font-size: 16px;
     display: block; }
@@ -56,6 +61,9 @@ img {
   padding: 20px 26px;
   font-size: 15px;
   border-radius: 10px; }
+
+.arrows__left, .arrows__right {
+  cursor: pointer; }
 
 .navbar {
   padding: 5px 0; }
@@ -216,7 +224,6 @@ img {
   background: url("../image/offer-bg.png") no-repeat;
   background-position: center right;
   background-size: contain;
-  margin-bottom: 70px;
   position: relative; }
   .offer:before {
     content: "";
@@ -233,7 +240,8 @@ img {
   .offer__title {
     max-width: 360px;
     line-height: 35px;
-    margin: 0 0 22px 0; }
+    margin: 0 0 22px 0;
+    text-align: left; }
   .offer__subtitle {
     max-width: 250px;
     margin-bottom: 30px; }
@@ -320,5 +328,42 @@ img {
       position: absolute;
       top: 0;
       right: 0; }
+
+.portfolio {
+  background: #f5f5f5 url("../image/bg-portfolio.jpg") repeat-y center left;
+  background-size: 50.5%; }
+  .portfolio__title {
+    margin-bottom: 90px;
+    font-size: 30px;
+    line-height: 45px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+    color: #333333; }
+  .portfolio__arrows {
+    max-width: 120px;
+    margin: auto;
+    margin-top: 68px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+.slider__item {
+  margin-left: 20px; }
+
+@media (max-width: 798px) {
+  .slider__image {
+    margin: auto; } }
+@media (max-width: 540px) {
+  .portfolio {
+    padding-top: 30px; }
+    .portfolio__title {
+      margin-bottom: 40px;
+      font-size: 18px;
+      line-height: 1.4; }
+    .portfolio__arrows {
+      margin-top: 40px; } }
 
 /*# sourceMappingURL=style.css.map */
