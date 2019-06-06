@@ -368,7 +368,8 @@ img {
     .portfolio__arrows {
       margin-top: 40px; } }
 .price {
-  color: #333333; }
+  color: #333333;
+  padding-bottom: 50px; }
   .price__title {
     margin: auto;
     margin-top: 22px;
@@ -468,5 +469,94 @@ img {
       margin-bottom: 20px; }
     .price__subtitle {
       font-size: 14px; } }
+.step {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  text-align: center;
+  position: relative; }
+  .step:after {
+    content: "";
+    width: 72px;
+    height: 25px;
+    position: absolute;
+    background: url("../image/arow-step.png") no-repeat center;
+    top: -12px;
+    right: -15%; }
+  .step:last-child:after {
+    display: none; }
+  .step__image {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ffd200;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 25px; }
+  .step__text {
+    font-size: 14px;
+    max-width: 160px;
+    margin: auto;
+    line-height: 20px; }
+  .steps {
+    color: #333333;
+    padding-top: 75px; }
+    .steps-block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .steps__title {
+      margin: auto;
+      max-width: 660px;
+      margin-bottom: 40px;
+      font-size: 30px;
+      line-height: 45px;
+      font-family: 'Museo Sans Bold', sans-serif;
+      font-weight: 700; }
+    .steps__subtitle {
+      text-align: center;
+      margin-bottom: 58px;
+      font-size: 20px;
+      line-height: 45px; }
+
+@media (max-width: 1200px) {
+  .step:after {
+    top: -12px;
+    right: -23%; } }
+@media (max-width: 768px) {
+  .step {
+    margin-bottom: 30px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+    .step:after {
+      display: none; }
+    .steps-block {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+@media (max-width: 474px) {
+  .steps {
+    padding-top: 0px; }
+    .steps__title {
+      font-size: 18px;
+      line-height: 1.4;
+      margin-bottom: 30px; }
+    .steps__subtitle {
+      font-size: 14px;
+      margin-bottom: 30px; }
+    .steps-block {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 /*# sourceMappingURL=style.css.map */
