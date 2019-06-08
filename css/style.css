@@ -853,5 +853,124 @@ img {
     display: block;
     margin: auto;
     max-width: 150px; } }
+.footer {
+  position: relative; }
+  .footer .map {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .footer .contacts {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding-top: 72px;
+    padding-left: 209px; }
+    .footer .contacts__title {
+      font-family: 'Museo Sans Bold', sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 1.4;
+      margin-bottom: 95px;
+      max-width: 300px; }
+    .footer .contacts-block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+    .footer .contacts-list {
+      padding: 0;
+      list-style: none;
+      margin-top: 0; }
+      .footer .contacts-list .text-bold {
+        font-family: 'Museo Sans Bold', sans-serif;
+        font-weight: 700; }
+      .footer .contacts-list__icon {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 33px;
+        margin-right: 25px; }
+      .footer .contacts-list__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        margin-bottom: 30px; }
+        .footer .contacts-list__item a {
+          text-decoration: none;
+          color: #333333;
+          font-family: 'Museo Sans Bold', sans-serif;
+          font-weight: 700; }
+      .footer .contacts-list__text {
+        line-height: 26px;
+        font-size: 16px; }
+
+@media (max-width: 1200px) {
+  .footer .contacts {
+    padding-left: 50px; } }
+@media (max-width: 1144px) {
+  .footer {
+    position: relative; }
+    .footer .contacts {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      padding-left: 0;
+      text-align: center; }
+      .footer .contacts-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .footer .contacts-list__icon img:first-child {
+          margin-top: 25px; }
+      .footer .contacts__title {
+        max-width: 400px;
+        margin: auto;
+        margin-bottom: 50px; }
+    .footer .map {
+      width: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      position: absolute;
+      top: 460px; } }
+@media (max-width: 768px) {
+  .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important; } }
+@media (max-width: 768px) {
+  .footer .map {
+    top: 500px; }
+  .footer .contacts {
+    text-align: left; }
+    .footer .contacts__title {
+      font-size: 18px;
+      line-height: 1.4; }
+    .footer .contacts-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      .footer .contacts-list__icon img {
+        margin-top: 0 !important; } }
 
 /*# sourceMappingURL=style.css.map */
