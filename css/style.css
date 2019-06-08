@@ -65,6 +65,9 @@ img {
 .arrows__left, .arrows__right {
   cursor: pointer; }
 
+.error {
+  border: 1px solid red; }
+
 .navbar {
   padding: 5px 0; }
   .navbar-block {
@@ -666,23 +669,189 @@ img {
           -ms-flex-direction: column;
               flex-direction: column; } }
 @media (max-width: 400px) {
-  .advantages__title {
-    font-size: 18px;
-    line-height: 1.4;
-    max-width: 240px;
-    margin-left: 20px;
-    margin-right: 20px; }
-  .advantages-blocks {
-    margin-bottom: 40px;
-    width: 100%; }
-  .advantages-contract__text {
+  .advantages {
+    padding-bottom: 40px; }
+    .advantages__title {
+      font-size: 18px;
+      line-height: 1.4;
+      max-width: 240px;
+      margin-left: 20px;
+      margin-right: 20px; }
+    .advantages-blocks {
+      margin-bottom: 40px;
+      width: 100%; }
+    .advantages-contract__text {
+      display: block;
+      font-size: 14px;
+      line-height: 1.4;
+      color: #333333;
+      max-width: 230px; }
+    .advantages-contracts {
+      padding-left: 0;
+      padding-right: 0; } }
+.brif {
+  margin-top: 120px;
+  color: #333333;
+  background-image: url("../image/brif-color-bg.png"), url("../image/brif-bg.jpg");
+  background-position: left center, center right;
+  background-size: 50%, contain;
+  background-repeat: repeat-y, no-repeat; }
+  .brif-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .brif__interview {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+  .brif__form {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding-left: 207px;
+    text-align: center; }
+  .brif__input {
+    width: 100%;
+    max-width: 370px;
+    margin-bottom: 20px;
+    height: 60px; }
+  .brif__button {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    height: 70px;
+    width: 100%;
+    max-width: 370px; }
+
+.interview {
+  padding-right: 70px; }
+  .interview__title {
+    width: 100%;
+    max-width: 525px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    font-size: 22px;
+    line-height: 33px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700; }
+  .interview__subtitle {
     display: block;
-    font-size: 14px;
-    line-height: 1.4;
-    color: #333333;
-    max-width: 230px; }
-  .advantages-contracts {
+    margin-bottom: 95px;
+    font-size: 16px; }
+  .interview-list {
+    list-style: none;
+    padding: 0; }
+    .interview-list__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 25px;
+      font-family: 'Museo Sans Bold', sans-serif;
+      font-weight: 700; }
+      .interview-list__item:nth-child(2) {
+        margin-bottom: 30px; }
+      .interview-list__item:last-child {
+        margin-top: 40px; }
+    .interview-list__counter {
+      display: inline-block;
+      margin-right: 35px;
+      text-align: center;
+      line-height: 35px;
+      font-size: 14px;
+      width: 35px;
+      height: 35px;
+      border: 2px solid #333333;
+      border-radius: 50%; }
+    .interview-list__text {
+      max-width: 400px;
+      font-size: 18px;
+      font-family: 'Museo Sans Bold', sans-serif;
+      font-weight: 700; }
+
+.form__title {
+  margin-top: 27px;
+  margin-bottom: 45px;
+  font-size: 22px;
+  line-height: 33px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700; }
+.form__subtitle {
+  display: block;
+  margin-bottom: 50px;
+  font-size: 16px; }
+.form__descriotion {
+  font-size: 15px !important;
+  display: block; }
+
+@media (max-width: 1200px) {
+  .brif__form {
+    padding-left: 30px; }
+
+  .interview {
+    padding-right: 30px; }
+    .interview__title {
+      font-size: 20px;
+      margin-bottom: 15px; }
+    .interview__subtitle {
+      margin-bottom: 30px; }
+    .interview-list__text {
+      font-size: 14px;
+      max-width: 280px; }
+
+  .form__title {
+    font-size: 20px;
+    margin-bottom: 15px; }
+  .form__subtitle {
+    margin-bottom: 30px; } }
+@media (max-width: 780px) {
+  .brif {
+    background-image: url("../image/brif-color-bg.png"), url("../image/brif-bg.jpg");
+    background-position: top center, center bottom;
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat; }
+    .brif-block {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .brif__form {
+      margin-top: 80px; }
+
+  .interview {
+    padding-left: 30px; } }
+@media (max-width: 450px) {
+  .brif {
+    margin-top: 0;
+    padding-top: 45px; }
+    .brif__form {
+      margin-top: 30px;
+      padding-left: 0; }
+
+  .interview {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+    .interview__subtitle {
+      font-size: 14px;
+      max-width: 180px; }
+    .interview__title {
+      font-size: 18px;
+      line-height: 1.4;
+      max-width: 250px; }
+    .interview-list__counter {
+      margin-right: 5px; }
+    .interview-list__text {
+      display: block;
+      font-size: 14px;
+      max-width: 240px; }
+
+  .form__title {
+    font-size: 18px;
+    line-height: 1.4; }
+  .form__subtitle {
+    font-size: 14px; }
+  .form__descriotion {
+    display: block;
+    margin: auto;
+    max-width: 150px; } }
 
 /*# sourceMappingURL=style.css.map */
